@@ -1,0 +1,36 @@
+<!-- views/libros/add.hbs -->
+<div class="container p-4" style="margin-top:70px;">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">Registrar libro</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/add" method="post">
+                        <div class="input-group mt-2">
+                            <label for="title" class="input-group-text">Título</label>
+                            <input class="form-control" type="text" name="title" id="title" placeholder="Título" autofocus required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="author" class="input-group-text">Autor</label>
+                            <input class="form-control" type="text" name="author" id="author" placeholder="Autor" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="cover" class="input-group-text">Portada</label>
+                            <input class="form-control" type="text" name="cover" id="cover" placeholder="Portada" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="publication_date" class="input-group-text">Fecha de publicación</label>
+                            <input class="form-control" type="date" name="publication_date" id="publication_date" required>
+                        </div>
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success">Guardar</button>
+                            <a class="btn btn-danger" href="/list">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
